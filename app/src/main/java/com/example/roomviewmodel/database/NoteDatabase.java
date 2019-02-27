@@ -25,4 +25,33 @@ public abstract class NoteDatabase extends RoomDatabase {
         return instance;
     }
 
+
+    //////  .addMigrations(MIGRATION_1_2)
+
+
+      /*  static final Migration MIGRATION_1_2 = new Migration(1, 2) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("CREATE TABLE `Fruit` (`id` INTEGER, "
+                    + "`name` TEXT, PRIMARY KEY(`id`))");
+        }
+    };
+
+    static final Migration MIGRATION_2_3 = new Migration(2, 3) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("ALTER TABLE Book "
+                    + " ADD COLUMN pub_year INTEGER");
+        }
+    };
+
+    static final Migration MIGRATION_1_3 = new Migration(1, 3) {
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("ALTER TABLE Book "
+                    + " ADD COLUMN pub_year INTEGER");
+        }
+    };
+*/
+
 }
